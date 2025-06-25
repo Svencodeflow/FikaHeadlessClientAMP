@@ -1,0 +1,253 @@
+[
+    {
+        "DisplayName": "Server URL",
+        "Category": "Connection",
+        "Description": "The IP Address of your SPT Server",
+        "Keywords": "server,url",
+        "FieldName": "SERVER_URL",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "SERVER_URL",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "your.spt.server.ip",
+        "Placeholder": "your.spt.server.ip",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Port",
+        "Category": "Connection",
+        "Description": "server port",
+        "Keywords": "server,port",
+        "FieldName": "PORT",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "PORT",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "6969",
+        "Placeholder": "6969",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Profile ID",
+        "Category": "Client",
+        "Description": "",
+        "Keywords": "profile,id",
+        "FieldName": "PROFILE_ID",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "PROFILE_ID",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "Placeholder": "",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "HTTPS",
+        "Category": "Connection",
+        "Description": "",
+        "Keywords": "https",
+        "FieldName": "HTTPS",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "HTTPS",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "Placeholder": "true",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Use ModSync",
+        "Category": "Mods",
+        "Description": "",
+        "Keywords": "use,modsync",
+        "FieldName": "USE_MODSYNC",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "USE_MODSYNC",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Disable Batchmode",
+        "Category": "Performance",
+        "Description": "",
+        "Keywords": "disable,batchmode",
+        "FieldName": "DISABLE_BATCHMODE",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "DISABLE_BATCHMODE",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Disable NoDynamicAI",
+        "Category": "AI",
+        "Description": "",
+        "Keywords": "disable,nodynamicai",
+        "FieldName": "DISABLE_NODYNAMICAI",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "DISABLE_NODYNAMICAI",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Auto Restart on Raid End",
+        "Category": "Performance",
+        "Description": "",
+        "Keywords": "auto,restart,on,raid,end",
+        "FieldName": "AUTO_RESTART_ON_RAID_END",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "AUTO_RESTART_ON_RAID_END",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "ESYNC",
+        "Category": "Wine/Performance",
+        "Description": "ESYNC",
+        "Keywords": "esync",
+        "FieldName": "ESYNC",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "ESYNC",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "FSYNC",
+        "Category": "Wine/Performance",
+        "Description": "",
+        "Keywords": "fsync",
+        "FieldName": "FSYNC",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "FSYNC",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "NTSYNC",
+        "Category": "Wine/Performance",
+        "Description": "",
+        "Keywords": "ntsync",
+        "FieldName": "NTSYNC",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "NTSYNC",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Use Graphics",
+        "Category": "Graphics",
+        "Description": "",
+        "Keywords": "use,graphics",
+        "FieldName": "USE_GRAPHICS",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "USE_GRAPHICS",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Xvfb Debug Output",
+        "Category": "Debug",
+        "Description": "",
+        "Keywords": "xvfb,debug,output",
+        "FieldName": "XVFB_DEBUG",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "XVFB_DEBUG",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "Placeholder": "false",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    }
+]
