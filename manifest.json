@@ -5,8 +5,8 @@
     "authors": [
         "Svencodeflow"
     ],
-    "origin": "https://github.com/Svencodeflow/Fika-Headless-Client-AMP-",
-    "url": "https://github.com/Svencodeflow/Fika-Headless-Client-AMP-",
+    "origin": "https://github.com/Svencodeflow/FikaHeadlessClientAMP",
+    "url": "https://github.com/Svencodeflow/FikaHeadlessClientAMP",
     "imagefile": "",
-    "prefix": "FIKA_"
+    "prefix": "FikaHeadlessClient"
 }
