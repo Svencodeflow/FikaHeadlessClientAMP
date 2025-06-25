@@ -5,18 +5,18 @@ FROM debian:bookworm AS build
 RUN apt update && apt install -y --no-install-recommends \
     curl ca-certificates git git-lfs bash dirmngr gpg
 
-# ENVs für asdf
+# ENV + Bash-Shell für asdf
 ENV ASDF_DIR=/root/.asdf
 ENV PATH="${ASDF_DIR}/bin:${ASDF_DIR}/shims:$PATH"
 SHELL ["/bin/bash", "-c"]
 
-# asdf + Node.js 20.11.1 (mit aktuellem Keyring Import)
+# Installiere asdf & Node.js 20.11.1 (neueste Methode)
 RUN git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR --branch v0.14.1 && \
-    bash -c "source $ASDF_DIR/asdf.sh && \
+    . "$ASDF_DIR/asdf.sh" && \
     asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
     bash $ASDF_DIR/plugins/nodejs/bin/import-release-team-keyring --no-tty && \
     asdf install nodejs 20.11.1 && \
-    asdf global nodejs 20.11.1"
+    asdf global nodejs 20.11.1
 
 # SPT Server bauen
 ARG SPT_SERVER_SHA=3.11.3
