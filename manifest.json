@@ -1,12 +1,16 @@
 {
-    "id": "fika-headless-templates",
-    "name": "Fika Headless Templates",
-    "description": "Templates for running SPT Fika Headless Clients with Docker in AMP.",
-    "authors": [
-        "Svencodeflow"
-    ],
-    "origin": "https://github.com/Svencodeflow/FikaHeadlessClientAMP",
-    "url": "https://github.com/Svencodeflow/FikaHeadlessClientAMP",
-    "imagefile": "",
-    "prefix": "FikaHeadlessClient"
+  "id": "fika-headless-templates",
+  "name": "Fika Headless Templates",
+  "description": "Templates for running SPT Fika Headless Clients with Docker in AMP.",
+  "authors": [
+    "Svencodeflow"
+  ],
+  "origin": "https://github.com/Svencodeflow/FikaHeadlessClientAMP",
+  "url": "https://github.com/Svencodeflow/FikaHeadlessClientAMP",
+  "imagefile": "ghcr.io/svencodeflow/fikaheadlessclientamp:latest",
+  "prefix": "FikaHeadlessClient",
+  "dockerRequired": true,
+  "containerPolicy": "Required",
+  "containerPolicyReason": "Fika Headless benötigt Wine, xvfb und Client-Dateien im Container.",
+  "prerequisites": []
 }
