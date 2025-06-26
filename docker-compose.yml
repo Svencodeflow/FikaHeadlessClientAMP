@@ -1,21 +1,17 @@
 version: "3.9"
 
 services:
-  fika-combined:
+  fika-headless:
     build: .
-    container_name: fika-combined
+    container_name: fika-headless
     restart: unless-stopped
     ports:
       - "6969:6969"
     environment:
-      - UID=1000
-      - GID=1000
-      - INSTALL_FIKA=true
-      - AUTO_UPDATE_SPT=true
-      - AUTO_UPDATE_FIKA=true
-      - TAKE_OWNERSHIP=true
-      - ENABLE_PROFILE_BACKUPS=true
-      - LISTEN_ALL_NETWORKS=true
-      - NUM_HEADLESS_PROFILES=1
+      # Diese ENV brauchst du nur, wenn das entrypoint.sh damit arbeitet
+      - SERVER_URL=127.0.0.1
+      - PORT=6969
+      - PROFILE_ID=pmc
+      # ...weitere Umgebungsvariablen je nach AMP-Konfig
     volumes:
-      - ./server:/opt/server
+      - ./tarkov:/tarkov
