@@ -1,12 +1,12 @@
 version: "3.9"
 
 services:
-  fika-server:
-    image: ghcr.io/zhliau/fika-spt-server-docker:latest
-    container_name: fika-server
+  fika-combined:
+    build: .
+    container_name: fika-combined
     restart: unless-stopped
     ports:
-      - 6969:6969
+      - "6969:6969"
     environment:
       - UID=1000
       - GID=1000
@@ -16,15 +16,6 @@ services:
       - TAKE_OWNERSHIP=true
       - ENABLE_PROFILE_BACKUPS=true
       - LISTEN_ALL_NETWORKS=true
+      - NUM_HEADLESS_PROFILES=1
     volumes:
       - ./server:/opt/server
-
-  fika-headless:
-    image: ghcr.io/svencodeflow/fikaheadlessclientamp:latest
-    container_name: fika-headless
-    depends_on:
-      - fika-server
-    environment:
-      - DISPLAY=:0
-    volumes:
-      - ./client:/AMP/spt-fika-headless
